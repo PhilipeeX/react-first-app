@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from "./components/HelloWorld";
 
 function App() {
   const philipe = 'Philipe'
@@ -15,6 +16,7 @@ function App() {
       <p>Testando ìnterpolação {philipe}</p>
       <p>soma: {sum(2,5)}</p>
       <img src={urlImg} alt="teste" width='300px' />
+      <HelloWorld />
     </div>
   );
 }
