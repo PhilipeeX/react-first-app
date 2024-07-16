@@ -1,5 +1,5 @@
 function frase() {
-  return(
+  return (
     <div>
       <p>Este é um componente que contem uma frase!</p>
     </div>

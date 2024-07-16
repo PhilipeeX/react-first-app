@@ -1,10 +1,12 @@
 import './App.css';
 import HelloWorld from "./components/HelloWorld";
+import SayMyName from "./components/SayMyName";
+import Pessoa from "./components/Pessoa";
 
 function App() {
   const philipe = 'Philipe'
 
-  function sum(x,y) {
+  function sum(x, y) {
     return x + y
   }
 
@@ -14,9 +16,12 @@ function App() {
     <div className="App">
       <h2>Alterando o JSX</h2>
       <p>Testando ìnterpolação {philipe}</p>
-      <p>soma: {sum(2,5)}</p>
-      <img src={urlImg} alt="teste" width='300px' />
-      <HelloWorld />
+      <p>soma: {sum(2, 5)}</p>
+      <img src={urlImg} alt="teste" width='300px'/>
+      <HelloWorld/>
+      <SayMyName nome="ESSA PROPS"/>
+
+      <Pessoa nome={philipe} idade={27} pais={"Brasil"}/>
     </div>
   );
 }
