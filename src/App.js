@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld";
 import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
 import Frase from "./components/Frase";
+import List from "./components/List";
 
 function App() {
   const philipe = 'Philipe'
@@ -26,6 +27,8 @@ function App() {
 
       <Pessoa nome={philipe} idade={27} pais={"Brasil"}/>
       <Frase />
+
+      <List />
     </div>
   );
 }
