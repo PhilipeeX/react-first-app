@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from "./components/HelloWorld";
 import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
+import Frase from "./components/Frase";
 
 function App() {
   const philipe = 'Philipe'
@@ -14,6 +15,8 @@ function App() {
 
   return (
     <div className="App">
+      <Frase />
+
       <h2>Alterando o JSX</h2>
       <p>Testando ìnterpolação {philipe}</p>
       <p>soma: {sum(2, 5)}</p>
@@ -22,6 +25,7 @@ function App() {
       <SayMyName nome="ESSA PROPS"/>
 
       <Pessoa nome={philipe} idade={27} pais={"Brasil"}/>
+      <Frase />
     </div>
   );
 }
