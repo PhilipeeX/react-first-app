@@ -4,9 +4,9 @@ function List() {
   return(
     <>
       <ul>
-        <Item marca="Volvo"/>
+        <Item marca="Volvo" ano_lancamento={1987}/>
         <Item marca="Honda"/>
-        <Item marca="Peugeot"/>
+        <Item ano_lancamento={1998}/>
       </ul>
     </>
   )
