@@ -1,12 +1,16 @@
 import './App.css';
-import Evento from './components/Evento'
-import Form from "./components/Form";
+import Conditional from "./components/Conditional";
+import AnotherList from "./components/AnotherList";
 
 function App() {
+
+  const itensFromApi = ['Backend', 'Frontend', 'Devops', 'Design']
+
   return (
     <div className="App">
-      <Evento />
-      <Form />
+      <h1>Renderizando uma lista</h1>
+      <AnotherList itens={itensFromApi} />
+      <Conditional />
     </div>
   );
 }
