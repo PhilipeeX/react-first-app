@@ -21,8 +21,7 @@ function Form() {
             name="name"
             placeholder="Digite o seu nome"
             value={name}
-            onChange={(e) => setName(e.target.value)
-          }
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
